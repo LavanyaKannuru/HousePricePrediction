@@ -1,15 +1,6 @@
 House Price Prediction Project
 This project is a machine learning-based web application built with Streamlit to predict house prices using the California housing dataset. The model predicts prices based on various input features, including location, number of bedrooms, and household median income.
 
-Project Structure
-.
-├── data/                     # Dataset folder (California housing data)
-├── app/                      # Application files
-│   ├── model.py              # ML model code
-│   ├── app.py                # Streamlit application
-├── requirements.txt          # Dependencies
-└── README.md                 # Project documentation
-
 Features:
 Machine Learning Model - Trained on the California housing dataset.
 Web Application - User-friendly interface created with Streamlit.
