@@ -1,69 +1,49 @@
-House Price Prediction App
-This project is a web application built using Streamlit that predicts house prices based on various features such as location, number of bedrooms, and square footage. The application utilizes a machine learning model trained on the California housing dataset.
+House Price Prediction Project
+This project is a machine learning-based web application built with Streamlit to predict house prices using the California housing dataset. The model predicts prices based on various input features, including location, number of bedrooms, and household median income.
 
-Features
-User-friendly interface for inputting house features.
-Real-time price predictions based on user inputs.
-Visualization of predicted prices.
-Technologies Used
-Python: Programming language for application development.
-Streamlit: Framework for building interactive web applications.
-Pandas: Library for data manipulation and analysis.
-NumPy: Library for numerical operations.
-scikit-learn: Library for machine learning model training and evaluation.
-Installation
-To run this project locally, follow these steps:
+Project Structure
+.
+├── data/                     # Dataset folder (California housing data)
+├── app/                      # Application files
+│   ├── model.py              # ML model code
+│   ├── app.py                # Streamlit application
+├── requirements.txt          # Dependencies
+└── README.md                 # Project documentation
 
-Clone the Repository:
+Features:
+Machine Learning Model - Trained on the California housing dataset.
+Web Application - User-friendly interface created with Streamlit.
 
-bash
-Copy code
-git clone https://github.com/LavanyaKannuru/HousePricePrediction.git
-cd HousePricePrediction
-Set Up a Virtual Environment (optional but recommended):
+Installation and Setup:
+Prerequisites:
+Python 3.7 or above
+Pip
+Virtual environment tool (optional but recommended)
 
-Windows:
-bash
-Copy code
-python -m venv venv
-venv\Scripts\activate
-macOS/Linux:
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate
-Install Required Packages:
+Setup Instructions
+Clone the repository:
+git clone https://github.com/yourusername/house-price-prediction.git
+cd house-price-prediction
 
-bash
-Copy code
+Create a virtual environment:
+python -m venv env
+source env/bin/activate   # On Windows, use `env\Scripts\activate`
+
+Install dependencies:
 pip install -r requirements.txt
-Usage
-To run the app locally, execute the following command:
 
-bash
-Copy code
-streamlit run app.py
-Open your browser and navigate to http://localhost:8501 to access the app.
+Run the application locally:
+streamlit run app/app.py
+After running this command, open your browser and go to http://localhost:8501 to view the application.
 
-API Endpoints
-The Streamlit app operates through a user interface rather than traditional API endpoints. Users can interact with the app through input forms, and predictions are displayed directly in the interface.
-
-Input Fields:
-Location: Dropdown menu for selecting the location.
-Number of Bedrooms: Numeric input for the number of bedrooms.
-Square Footage: Numeric input for the size of the house in square feet.
-Additional Features: Other relevant features can be added as necessary.
-Output:
-Predicted Price: Displays the estimated price of the house based on the provided inputs.
-Model Building Assumptions
-The model assumes that the provided features are significant predictors of house prices.
-The dataset used for training is specific to California and may not be applicable to other regions.
-It is assumed that the dataset is preprocessed and cleaned prior to training.
+Model and Assumptions:
+Dataset: The model is trained on the California housing dataset.
+Assumptions:
+Features Used: The model uses features like median income (MedInc), number of bedrooms, and location for predictions.
+Target Variable: Median house price in a block group.
+Data Preprocessing: Standard scaling is applied to features, and any missing values are handled by filling with the median.
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
-
+This project is licensed under the MIT License.
 
 
 
